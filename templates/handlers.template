@@ -1,0 +1,20 @@
+package handlers
+
+import (
+    "net/http"
+    "html/template"
+)
+
+func form_handler(w *http.ResponseWriter, r http.Request) {
+    {{ range .HandlerConfigs }}
+    
+    {{ .Name }}_value := r.FormValue("{{ .Name }}")
+    {{ if .Required }}
+    if {{ .Name }}_value != "" {
+        return
+    }
+    {{ end }}
+
+    {{ end }}
+    return
+}

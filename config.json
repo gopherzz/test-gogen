@@ -1,0 +1,11 @@
+{
+    "url": "/",
+    "handlers": [
+        {
+            "name": "name",
+            "title": "Name",
+            "ph": "Type your name...",
+            "required": true
+        }
+    ]
+}
