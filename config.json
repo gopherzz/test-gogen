@@ -2,9 +2,21 @@
     "url": "/",
     "handlers": [
         {
-            "name": "name",
-            "title": "Name",
-            "ph": "Type your name...",
+            "name": "firstname",
+            "title": "Firstname",
+            "ph": "Type your firstname...",
+            "required": true
+        },
+        {
+            "name": "surname",
+            "title": "Surname",
+            "ph": "Type your surname...",
+            "required": false
+        },
+        {
+            "name": "city",
+            "title": "City",
+            "ph": "Type your city...",
             "required": true
         }
     ]
